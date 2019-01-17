@@ -9,7 +9,7 @@ import { withRouter } from 'react-router';
   }),
   {},
 )
-class About extends PureComponent {
+class NotFound extends PureComponent {
   static propTypes = {
    
   }
@@ -20,11 +20,11 @@ class About extends PureComponent {
   render() {
     return (
       <div>
-        <h1>About</h1>
+        <h1>404</h1>
         <button onClick={this.click}>To Home</button>
       </div>
     );
   }
 }
 
-export default About;
+export default NotFound;

@@ -9,6 +9,7 @@ import 'moment/locale/zh-cn';
 import createBrowserHistory from 'history/createBrowserHistory';
 import Home from './containers/home';
 import About from './containers/about';
+import NotFound from './containers/notFound';
 import configureStore from './store';
 
 
@@ -24,9 +25,10 @@ function Main() {
       <Provider store={store}>
         <Router history={history}>
           <Switch>
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/home" component={Home} />
-            <Route component={Home} />
+            <Route component={NotFound} />
           </Switch>
         </Router>
       </Provider>
