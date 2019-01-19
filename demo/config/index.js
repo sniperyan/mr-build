@@ -124,5 +124,7 @@ module.exports = {
     // as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
     // Omit trailing slash as %PUBLIC_PATH%/xyz looks better than %PUBLIC_PATH%xyz.
     publicUrl: '',
+    // picture to base64 limit size
+    picBaseLimit: 10000,
   },
 };
