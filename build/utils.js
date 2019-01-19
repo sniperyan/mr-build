@@ -13,14 +13,6 @@ exports.assetsPath = function(_path) {
   return path.posix.join(assetsSubDirectory, _path);
 };
 
-
-// style files regexes
-// const cssRegex = /\.css$/;
-// const cssModuleRegex = /\.module\.css$/;
-// const sassRegex = /\.(scss|sass)$/;
-// const sassModuleRegex = /\.module\.(scss|sass)$/;
-// const lessRegex = /\.less$/;
-// const lessModuleRegex = /\.module\.less$/;
 exports.cssLoaders = function(options) {
   options = options || {};
 
@@ -150,7 +142,6 @@ exports.styleLoaders = function(options) {
       // exclude: /node_modules/,
     });
   }
-  
 
   return output;
 };
@@ -176,8 +167,8 @@ exports.createNotifierCallback = () => {
 // 找到项目根目录
 exports.resolve = (dir) => {
   //TODO:npm环境
-  // return path.join(__dirname, '../../../', dir);  
-  return path.join(__dirname, '../demo/', dir);
+  return path.join(__dirname, '../../../', dir);  
+  // return path.join(__dirname, '../demo/', dir);
 };
 
 const appDirectory = fs.realpathSync(process.cwd());
